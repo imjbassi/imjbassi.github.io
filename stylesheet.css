@@ -1,0 +1,191 @@
+ @font-face {
+     font-family: 'platform_trialbold_italic';
+     src: url('platform-bolditalic-trial-webfont.woff2') format('woff2'), url('platform-bolditalic-trial-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ @font-face {
+     font-family: 'platform_trialbold';
+     src: url('platform-bold-trial-webfont.woff2') format('woff2'), url('platform-bold-trial-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ @font-face {
+     font-family: 'platform_trialhairline_italic';
+     src: url('platform-hairlineitalic-trial-webfont.woff2') format('woff2'), url('platform-hairlineitalic-trial-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ @font-face {
+     font-family: 'platform_trialhairline';
+     src: url('platform-hairline-trial-webfont.woff2') format('woff2'), url('platform-hairline-trial-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ @font-face {
+     font-family: 'platform_triallight_italic';
+     src: url('platform-lightitalic-trial-webfont.woff2') format('woff2'), url('platform-lightitalic-trial-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ @font-face {
+     font-family: 'platform_triallight';
+     src: url('platform-light-trial-webfont.woff2') format('woff2'), url('platform-light-trial-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ @font-face {
+     font-family: 'platform_trialmedium_italic';
+     src: url('platform-mediumitalic-trial-webfont.woff2') format('woff2'), url('platform-mediumitalic-trial-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ @font-face {
+     font-family: 'platform_trialmedium';
+     src: url('platform-medium-trial-webfont.woff2') format('woff2'), url('platform-medium-trial-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ @font-face {
+     font-family: 'platform_trialregular_italic';
+     src: url('platform-regularitalic-trial-webfont.woff2') format('woff2'), url('platform-regularitalic-trial-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ @font-face {
+     font-family: 'platform_regular_trialregular';
+     src: url('platform-regular-trial-webfont.woff2') format('woff2'), url('platform-regular-trial-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ body {
+     margin: 0;
+     font-family: 'platform_triallight', Arial, sans-serif;
+     background-color: #f7f6f6;
+     overflow: hidden;
+    /* Hide content that exceeds the viewport */
+}
+ .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     position: relative;
+}
+ .text {
+     font-size: 27em;
+     color: black;
+    /* Make the text transparent */
+     position: absolute;
+     top: 350px;
+    /* Adjust this value to position the larger text higher or lower */
+     opacity: 0.85;
+}
+ .regular-text {
+     font-family: 'platform_regular_trialregular', Arial, sans-serif;
+     font-size: 1em;
+     color: black;
+     position: absolute;
+     top: 280px;
+    /* Adjust this value to position the smaller text higher or lower */
+     left: 50%;
+     transform: translateX(-50%);
+     width: 25%;
+    /* Adjust the width to make the text shorter from both sides */
+     text-align: center;
+    /* Center the text horizontally */
+     letter-spacing: 0.3px;
+     line-height: 1.3;
+     z-index: 2;
+}
+ .hairline-text {
+     font-family: 'platform_trialhairline', Arial, sans-serif;
+     font-size: 2em;
+    /* Adjust the font size for the hairline text */
+     color: #black;
+     position: absolute;
+     top: 220px;
+    /* Adjust this value to position the hairline text */
+     left: 50%;
+     transform: translateX(-50%);
+     z-index: 2;
+     opacity: 0.2;
+     font-weight: bold;
+}
+ .tab-container {
+     .tab.asterisk {
+         font-size: 30px;
+        /* Adjust the font size as needed */
+         padding: 7px 0;
+         z-index: 2;
+        /* Adjust the z-index as needed */
+    }
+     display: flex;
+     justify-content: space-around;
+     background-color: white;
+     position: fixed;
+     top: 0px;
+     left: 0;
+     right: 0;
+     padding: 7px 0;
+     z-index: 3;
+    /* Ensure the tab container is above other content */
+}
+ .tab {
+     text-decoration: none;
+     color: #6897BB;
+     font-weight: regular-text;
+     padding: 15px 15px;
+     border-bottom: 2px solid transparent;
+     transition: border-bottom-color 0.5s ease-in-out;
+}
+ .tab:hover {
+     border-bottom-color: black;
+}
+ .cursor {
+     position: fixed;
+     width: 60px;
+     height: 60px;
+     background: #437194;
+     border-radius: 50%;
+     transition: 0.2s;
+     z-index: 3;
+     opacity: 0.25;
+     pointer-events: none;
+    /* Allow clicks to go through the cursor */
+     transform: translate(-50%, -50%);
+    /* Center the custom cursor */
+}
+ .small-cursor {
+     width: 30px;
+     height: 30px;
+     background: #437194;
+    /* Add this line to keep the cursor visible */
+     border-radius: 50%;
+     opacity: 0.75;
+}
+ .show-custom-cursor .cursor {
+     display: block;
+    /* Show custom cursor when class is applied */
+}
+ .hide-system-cursor {
+     cursor: none;
+}
+ .text::selection {
+     background-color: transparent;
+    /* Remove the background color */
+     color: #6897BB;
+    /* Change the text color when selected */
+}
+ .regular-text::selection {
+     background-color: transparent;
+    /* Remove the background color */
+     color: #6897BB;
+    /* Change the text color when selected */
+}
+ .hairline-text::selection {
+     background-color: transparent;
+    /* Remove the background color */
+     color: #6897BB;
+    /* Change the text color when selected */
+}

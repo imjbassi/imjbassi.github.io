@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jaiveer Bassi</title>
+        <link rel="stylesheet" href="stylesheet.css" />
+        <!-- Link to your external CSS file -->
+        <style></style>
+    </head>
+    <body>
+        <div class="tab-container">
+            <a class="tab" href="https://github.com/imjbassi">GITHUB</a>
+            <a class="tab" href="https://www.linkedin.com/in/jaiveer-bassi/">LINKEDIN</a>
+            <a class="tab asterisk" href="#" id="toggleCursor">*</a>
+            <!-- Use the asterisk (*) link with the "asterisk" class -->
+            <a class="tab" href="https://monkeytype.com/profile/jbassi">LEETCODE</a>
+            <a class="tab" href="https://monkeytype.com/profile/jbassi">MONKEYTYPE</a>
+        </div>
+        <div class="container">
+            <div class="hairline-text">view on desktop*</div>
+            <div class="regular-text">COMPUTER SCIENCE GRADUATE FROM CALIFORNIA <a href="https://youtu.be/omfz62qu_Bc" class="small-cursor">🏖️</a> PROGRAMMING, FRONT END, DATABASE SYSTEMS.</div>
+            <div class="text">Jaiveer</div>
+            <div class="cursor"></div>
+            <!-- Ensure the cursor element is present -->
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const cursor = document.querySelector(".cursor");
+                const toggleCursorLink = document.getElementById("toggleCursor");
+
+                toggleCursorLink.addEventListener("click", () => {
+                    document.body.classList.toggle("hide-system-cursor");
+                });
+
+                document.addEventListener("mousemove", (e) => {
+                    cursor.style.left = e.pageX + "px";
+                    cursor.style.top = e.pageY + "px";
+                });
+
+                const smallCursorLinks = document.querySelectorAll(".small-cursor, .tab");
+                smallCursorLinks.forEach((link) => {
+                    link.addEventListener("mouseenter", () => {
+                        cursor.classList.add("small-cursor");
+                    });
+                    link.addEventListener("mouseleave", () => {
+                        cursor.classList.remove("small-cursor");
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
