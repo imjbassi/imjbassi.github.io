@@ -5,49 +5,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Jaiveer Bassi</title>
         <link rel="stylesheet" href="stylesheet.css" />
-        <!-- Link to your external CSS file -->
-        <style></style>
     </head>
     <body>
         <div class="tab-container">
             <a class="tab" href="https://github.com/imjbassi">GITHUB</a>
             <a class="tab" href="https://www.linkedin.com/in/jaiveer-bassi/">LINKEDIN</a>
-            <a class="tab asterisk" href="#" id="toggleCursor">*</a>
-            <!-- Use the asterisk (*) link with the "asterisk" class -->
-            <a class="tab" href="https://leetcode.com/imjbassi/">LEETCODE</a>
-            <a class="tab" href="https://monkeytype.com/profile/jbassi">MONKEYTYPE</a>
+            <a class="tab" href="https://monkeytype.com/profile/jbassi">LEETCODE</a>
         </div>
         <div class="container">
             <div class="hairline-text">view on desktop*</div>
-            <div class="regular-text">COMPUTER SCIENCE GRADUATE FROM CALIFORNIA <a href="https://youtu.be/omfz62qu_Bc" class="small-cursor">🏖️</a> PROGRAMMING, FRONT END, DATABASE SYSTEMS.</div>
-            <div class="text">Jaiveer</div>
+            <div class="regular-text">COMPUTER SCIENCE GRADUATE FROM CALIFORNIA <a href="https://youtu.be/omfz62qu_Bc" class="small-cursor">🏖️</a> PROGRAMMING, FRONT END, DATABASE SYSTEMS, AND MORE</div>
+            <div class="title-text">Jaiveer</div>
             <div class="cursor"></div>
-            <!-- Ensure the cursor element is present -->
         </div>
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const cursor = document.querySelector(".cursor");
-                const toggleCursorLink = document.getElementById("toggleCursor");
+		
+		<!-- 
+		♟️ 🏋️ 🌞 🧑 placeholder  🧑
+		-->
+		
+        <div class="project-text1">Lichess Puzzle GUI</div>
+        <div class="project-desc1">
+            <a class="project-link" href="https://github.com/imjbassi/Lichess-Puzzle-Python-GUI">Python</a>
+        </div>
 
-                toggleCursorLink.addEventListener("click", () => {
-                    document.body.classList.toggle("hide-system-cursor");
-                });
+        <div class="project-text2">Progress Pulse</div>
+        <div class="project-desc2">
+            <a class="project-link" href="https://github.com/imjbassi/ProgressPulse">MySQL</a>
+        </div>
 
-                document.addEventListener("mousemove", (e) => {
-                    cursor.style.left = e.pageX + "px";
-                    cursor.style.top = e.pageY + "px";
-                });
+        <div class="project-text3">Donut Weather</div>
+        <div class="project-desc3">SwiftUI</div>
 
-                const smallCursorLinks = document.querySelectorAll(".small-cursor, .tab");
-                smallCursorLinks.forEach((link) => {
-                    link.addEventListener("mouseenter", () => {
-                        cursor.classList.add("small-cursor");
-                    });
-                    link.addEventListener("mouseleave", () => {
-                        cursor.classList.remove("small-cursor");
-                    });
-                });
-            });
-        </script>
+        <div class="project-text4">MetaHuman USV</div>
+        <div class="project-desc4">Unreal Engine</div>
+
+        <div class="project-text5">Placeholder</div>
+        <div class="project-desc5">C++</div>
+
+        <div class="project-text6">imjbassi.github.io</div>
+        <div class="project-desc6">
+            <a class="project-link" href="https://imjbassi.github.io/">HTML / CSS / JS</a>
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
