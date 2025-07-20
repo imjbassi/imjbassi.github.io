@@ -1,71 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Jaiveer Bassi</title>
-        <link rel="stylesheet" href="stylesheet.css" />
-    </head>
-    <body>
-        <div class="tab-container">
-            <a class="tab" href="https://github.com/imjbassi">GITHUB</a>
-            <a class="tab" href="https://www.linkedin.com/in/jaiveer-bassi/">LINKEDIN</a>
-            <a class="tab" href="https://leetcode.com/imjbassi/">LEETCODE</a>
-        </div>
-        <div class="container">
-            <div class="hairline-text">view on desktop*</div>
-            <div class="regular-text">COMPUTER SCIENCE GRADUATE FROM CALIFORNIA <a href="https://youtu.be/omfz62qu_Bc" class="small-cursor">🏖️</a> PROGRAMMING, FRONT END, DATABASE SYSTEMS, AND MORE</div>
-            <div class="title-text">
-                Jaiveer
-                
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="description" content="Jaiveer Bassi - Professional CS Research Portfolio - Showcasing research papers, projects, and academic achievements">
+    <meta name="keywords" content="Jaiveer Bassi, computer science, research, portfolio, papers, projects, academic">
+    <meta name="author" content="Jaiveer Bassi">
+    <title>Jaiveer Bassi - CS Research Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Global Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; }
+        
+        /* Navigation */
+        .navbar { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; width: 100%; z-index: 1000; padding: 1rem 0; border-bottom: 1px solid #e9ecef; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo a { font-size: 1.5rem; font-weight: 700; color: #667eea; text-decoration: none; }
+        .nav-menu { display: flex; gap: 2rem; list-style: none; }
+        .nav-item a { text-decoration: none; color: #333; font-weight: 500; transition: color 0.3s ease; }
+        .nav-item a:hover { color: #667eea; }
+        
+        /* Hero Section */
+        .hero { min-height: 100vh; display: flex; align-items: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; }
+        .hero-content h1 { font-size: 3.5rem; margin-bottom: 1rem; font-family: 'Source Serif Pro', serif; }
+        .hero-content p { font-size: 1.3rem; margin-bottom: 2rem; opacity: 0.9; }
+        .hero-links { display: flex; gap: 1rem; justify-content: center; }
+        .btn { padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 500; transition: all 0.3s ease; }
+        .btn-primary { background: white; color: #667eea; }
+        .btn-secondary { background: transparent; color: white; border: 2px solid white; }
+        
+        /* Section Styling */
+        .section { padding: 80px 0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: #333; font-family: 'Source Serif Pro', serif; }
+        
+        /* Projects Section */
+        .projects { padding: 80px 0; background: white; }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .project-card { 
+            background: #f8f9fa !important; 
+            color: #000 !important; 
+            padding: 2rem !important; 
+            border: 3px solid #667eea !important; 
+            margin: 1rem 0 !important; 
+            border-radius: 12px !important;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+            transition: transform 0.3s ease !important;
+        }
+        .project-card:hover { transform: translateY(-5px) !important; }
+        .project-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; gap: 1rem; }
+        .project-title { 
+            color: #2c3e50 !important; 
+            font-size: 1.5rem !important; 
+            font-weight: 600 !important; 
+            margin: 0 !important;
+            font-family: 'Source Serif Pro', serif !important;
+        }
+        .project-links { display: flex; gap: 0.5rem; }
+        .project-link { 
+            display: flex; align-items: center; justify-content: center; 
+            width: 35px; height: 35px; 
+            background: #667eea !important; 
+            color: white !important; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            transition: all 0.3s ease;
+        }
+        .project-link:hover { background: #5a6fd8 !important; transform: scale(1.1); }
+        .project-description { 
+            color: #555 !important; 
+            font-size: 1rem !important; 
+            line-height: 1.6 !important; 
+            margin-bottom: 1.5rem !important; 
+        }
+        .project-tech { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .tech-tag { 
+            background: #667eea !important; 
+            color: white !important; 
+            padding: 6px 12px !important; 
+            border-radius: 15px !important; 
+            font-size: 0.85rem !important; 
+            font-weight: 500 !important;
+            display: inline-block !important;
+        }
+        
+        /* Skills Section */
+        .skills { padding: 80px 0; background: #f8f9fa; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .skill-category { 
+            background: white !important; 
+            color: #000 !important; 
+            padding: 2rem !important; 
+            border: 2px solid #e9ecef !important; 
+            border-radius: 12px !important;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+            transition: all 0.3s ease !important;
+        }
+        .skill-category:hover { transform: translateY(-2px) !important; border-color: #667eea !important; }
+        .category-title { 
+            color: #2c3e50 !important; 
+            font-size: 1.3rem !important; 
+            font-weight: 600 !important; 
+            margin-bottom: 1.5rem !important;
+            font-family: 'Source Serif Pro', serif !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 0.75rem !important;
+        }
+        .category-title i { color: #667eea !important; font-size: 1.3rem !important; }
+        .skills-list { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+        .skill-item { 
+            background: #f8f9fa !important; 
+            color: #495057 !important; 
+            padding: 8px 16px !important; 
+            border-radius: 20px !important; 
+            font-size: 0.9rem !important;
+            font-weight: 500 !important;
+            border: 2px solid #e9ecef !important;
+            transition: all 0.3s ease !important;
+            cursor: default !important;
+            display: inline-block !important;
+        }
+        .skill-item:hover { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important; 
+            color: white !important; 
+            transform: translateY(-2px) !important;
+            border-color: #667eea !important;
+        }
+        
+        /* Contact Section */
+        .contact { padding: 80px 0; background: white; text-align: center; }
+        .contact-content { max-width: 600px; margin: 0 auto; }
+        .contact-description { font-size: 1.1rem; margin-bottom: 2rem; color: #666; }
+        .contact-details { margin-bottom: 2rem; }
+        .contact-item { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem; font-size: 1rem; }
+        .contact-item i { color: #667eea; width: 20px; }
+        .contact-social { display: flex; gap: 1rem; justify-content: center; }
+        .contact-social a { 
+            display: flex; align-items: center; justify-content: center; 
+            width: 50px; height: 50px; 
+            background: #667eea; color: white; 
+            text-decoration: none; border-radius: 50%; 
+            transition: all 0.3s ease; font-size: 1.2rem;
+        }
+        .contact-social a:hover { background: #5a6fd8; transform: translateY(-2px); }
+        
+        /* Footer */
+        .footer { background: #2c3e50; color: white; text-align: center; padding: 2rem 0; }
+        .footer-content p { margin-bottom: 0.5rem; opacity: 0.8; }
+        
+        /* About Section */
+        .about { padding: 80px 0; background: #f8f9fa; }
+        .about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .about-card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
+        .card-title { color: #2c3e50; font-size: 1.3rem; margin-bottom: 1rem; font-family: 'Source Serif Pro', serif; }
+        .card-content { color: #666; line-height: 1.6; }
+        
+        /* Research Section */
+        .research { padding: 80px 0; background: white; }
+        .research-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .research-paper { background: #f8f9fa; padding: 2rem; border-radius: 12px; border-left: 4px solid #667eea; }
+        .paper-title { color: #2c3e50; font-size: 1.2rem; margin-bottom: 1rem; font-family: 'Source Serif Pro', serif; }
+        .paper-authors { color: #666; margin-bottom: 1rem; font-style: italic; }
+        .paper-abstract { color: #555; line-height: 1.6; margin-bottom: 1rem; }
+        .paper-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .research-tag { background: #e3f2fd; color: #1976d2; padding: 4px 8px; border-radius: 12px; font-size: 0.8rem; }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            .section-title { font-size: 2rem; }
+            .nav-menu { display: none; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .skills-grid { grid-template-columns: 1fr; }
+            .about-grid { grid-template-columns: 1fr; }
+            .research-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">imjbassi.github.io</a>
             </div>
-            <div class="cursor"></div>
-<div class="resume-text">
-    <a class="project-link" href="resume.pdf" download="your-resume.pdf">résumé</a>
-</div>
-
-<div class="project-text">
-    Highlighted Projects
-    <svg width="50" height="35" viewBox="-2.5 -5 75 60" preserveAspectRatio="none" style="margin-left: 10px;">
-        <path d="M0,0 l35,50 l35,-50" fill="none" stroke="black" stroke-linecap="round" stroke-width="5" />
-    </svg>
-</div>
-
-
-        <div class="project-text1">🧩 Lichess Puzzles</div>
-        <div class="project-desc1">
-            <a class="project-link" href="https://github.com/imjbassi/Lichess-Puzzle-Python-GUI">Python</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#research">Research</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="project-text2">🏋 Progress Pulse</div>
-        <div class="project-desc2">
-            <a class="project-link" href="https://github.com/imjbassi/ProgressPulse">MySQL</a>
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Jaiveer Bassi</h1>
+            <p style="font-style: italic; font-size: 0.9rem; opacity: 0.85; margin-bottom: 1rem;">Last updated July 20, 2025</p>
+            <p>Software Engineer & Computer Science Researcher</p>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; opacity: 0.95;">
+                Passionate about advancing AI in healthcare and security through rigorous research and practical applications. 
+                Currently pursuing graduate studies while building innovative solutions that bridge academic research with real-world impact.
+            </p>
+            <div class="hero-links">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
         </div>
+    </div>
+</section>
 
-        <div class="project-text3">🌞 Donut Weather</div>
-<div class="project-desc3">
-            <a class="project-link" href="https://github.com/imjbassi/DonutWeather">SwiftUI</a>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3 class="card-title">🎓 Education</h3>
+                <div class="card-content">
+                    <p><strong>Master of Science in Computer Software Engineering</strong><br>
+                    Grand Canyon University, Phoenix, AZ (May 2024 – Oct 2025)</p>
+                    
+                    <p><strong>Bachelor of Science in Computer Science</strong><br>
+                    University of Silicon Valley, San Jose, CA (May 2021 – Aug 2023)</p>
+                    
+                    <p><strong>Computer and Information Sciences (Transferred)</strong><br>
+                    Solano Community College, Fairfield, CA (June 2020 – May 2021)</p>
+                </div>
+            </div>
+            
+            <div class="about-card">
+                <h3 class="card-title">💼 Professional Experience</h3>
+                <div class="card-content">
+                    <p><strong>Software Developer</strong><br>
+                    Kaiser Permanente Regional Laboratory, Berkeley, CA (Oct 2023 – June 2024)<br>
+                    Built a React + Express web application for lab instrument data, with RESTful APIs and SQL-backed workflows.</p>
+
+                    <p><strong>Freelance Full-Stack Developer</strong><br>
+                    Remote (June 2024 – Aug 2024)<br>
+                    Developed and deployed a SaaS project tracker using React, Node.js, and MongoDB with OAuth integration.</p>
+                </div>
+            </div>
+            
+            <div class="about-card">
+                <h3 class="card-title">🏆 Certifications</h3>
+                <div class="card-content">
+                    <p>• Fundamentals of AI and Machine Learning in Healthcare<br>
+                    Stanford University School of Medicine – 11 AMA PRA Category 1 Credits (June 2025)</p>
+                    
+                    <p>• Google Project Management Professional Certificate<br>
+                    Credential ID: DQ3EEK89IWI6 (Sep 2024)</p>
+                    
+                    <p>• Google IT Support Certificate<br>
+                    Credential ID: 6KPKTL6896VT (May 2021)</p>
+                </div>
+            </div>
         </div>
+    </div>
+</section>
 
-        <div class="project-text4">🧑 MetaHuman USV</div>
-<div class="project-desc4">
-            <a class="project-link" href="https://github.com/imjbassi/USV-RWPS485-MetaHuman">Unreal Engine</a>
+
+    <!-- Research Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2 class="section-title">Research Papers</h2>
+            <div class="research-grid">
+                <div class="research-paper">
+                    <h3 class="paper-title">Adversarial Attacks on AI-Based Security Systems: A Comprehensive Analysis</h3>
+                    <p class="paper-authors">Jaiveer Bassi</p>
+                    <p class="paper-abstract">
+                        This research investigates the vulnerabilities of AI-based security systems to adversarial attacks, 
+                        examining various attack methodologies and their impact on system reliability. The study provides 
+                        a comprehensive analysis of defense mechanisms and proposes novel approaches to improve robustness.
+                    </p>
+                    <div class="paper-tags">
+                        <span class="research-tag">Adversarial AI</span>
+                        <span class="research-tag">Security</span>
+                        <span class="research-tag">Machine Learning</span>
+                    </div>
+                </div>
+                
+                <div class="research-paper">
+                    <h3 class="paper-title">Enhancing Code Completion with Transformer-Based Models: A Study on Developer Productivity</h3>
+                    <p class="paper-authors">Jaiveer Bassi</p>
+                    <p class="paper-abstract">
+                        An empirical study examining the effectiveness of transformer-based code completion models in 
+                        improving developer productivity. The research analyzes various architectures and training 
+                        methodologies to optimize code suggestion accuracy and contextual relevance.
+                    </p>
+                    <div class="paper-tags">
+                        <span class="research-tag">Transformers</span>
+                        <span class="research-tag">Code Completion</span>
+                        <span class="research-tag">Developer Tools</span>
+                    </div>
+                </div>
+                
+                <div class="research-paper">
+                    <h3 class="paper-title">Brain Tumor Classification with Pretrained CNNs in PyTorch</h3>
+                    <p class="paper-authors">Jaiveer Bassi</p>
+                    <p class="paper-abstract">
+                        This study explores the application of pretrained convolutional neural networks for brain tumor 
+                        classification using PyTorch. The research evaluates various CNN architectures including ResNet, 
+                        VGG, and DenseNet for medical image analysis, demonstrating improved accuracy in tumor detection 
+                        and classification through transfer learning techniques.
+                    </p>
+                    <div class="paper-tags">
+                        <span class="research-tag">Medical AI</span>
+                        <span class="research-tag">CNNs</span>
+                        <span class="research-tag">PyTorch</span>
+                        <span class="research-tag">Computer Vision</span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="project-text5">🔢 Mathematize</div>
-<div class="project-desc5">
-            <a class="project-link" href="https://github.com/imjbassi/Mathematize">C++</a>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Google DeepMind Perception Test Challenge</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/imjbassi/BLIP-2-Video-QA" target="_blank" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Built a local inference pipeline using BLIP-2 for visual reasoning on video datasets. 
+                        Processed video frames with OpenCV, generated answers with HuggingFace Transformers, 
+                        and submitted predictions to EvalAI for the Google DeepMind Perception Test Challenge.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">BLIP-2</span>
+                        <span class="tech-tag">HuggingFace</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">CUDA</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">MedStract.net</h3>
+                        <div class="project-links">
+                            <a href="https://medstract.net" target="_blank" class="project-link" aria-label="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Biomedical research platform with PubMed integration for querying abstracts, summarizing with BioBERT, 
+                        and visualizing author-citation networks and keyword clusters. Built with Streamlit and deployed for 
+                        researchers and healthcare professionals.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">BioBERT</span>
+                        <span class="tech-tag">PubMed API</span>
+                        <span class="tech-tag">UMLS</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">CareerTuner.org</h3>
+                        <div class="project-links">
+                            <a href="https://careertuner.org" target="_blank" class="project-link" aria-label="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        AI-powered resume analyzer with GPT-based feedback, ATS scoring, and skills matching. 
+                        Features Supabase backend, Tailwind UI, and PDF export functionality. Helps job seekers 
+                        optimize their resumes for better job application success.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">OpenAI</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">PDFKit</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">USV RWPS485 MetaHuman Project</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/imjbassi/USV-RWPS485-MetaHuman" target="_blank" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        MetaHuman project developed at University of Silicon Valley featuring advanced character 
+                        animation and real-time rendering technologies. Implemented using Unreal Engine with focus 
+                        on photorealistic human simulation and interactive experiences.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Unreal Engine</span>
+                        <span class="tech-tag">MetaHuman</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Real-time Rendering</span>
+                        <span class="tech-tag">Animation</span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="project-text6">👋 imjbassi</div>
-        <div class="project-text6-1">you're here right now!</div>
-        <div class="project-text6-2">if you want more visit the links at the top</div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-star"></i>
+                        Top Skills
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-item">OpenAI API</span>
+                        <span class="skill-item">Tailwind CSS</span>
+                        <span class="skill-item">Full-Stack Development</span>
+                    </div>
+                </div>
 
-        <div class="project-desc6">
-            <a class="project-link" href="https://imjbassi.github.io/">HTML / CSS / JS</a>
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">R</span>
+                        <span class="skill-item">HTML/CSS</span>
+                        <span class="skill-item">HL7</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-brain"></i>
+                        Machine Learning
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-item">PyTorch</span>
+                        <span class="skill-item">Scikit-learn</span>
+                        <span class="skill-item">Pandas</span>
+                        <span class="skill-item">NumPy</span>
+                        <span class="skill-item">OpenCV</span>
+                        <span class="skill-item">BioBERT</span>
+                        <span class="skill-item">HuggingFace</span>
+                        <span class="skill-item">BLIP-2</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Frameworks
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Express</span>
+                        <span class="skill-item">Flask</span>
+                        <span class="skill-item">Streamlit</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">AWS</span>
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">VSCode</span>
+                        <span class="skill-item">Unity</span>
+                        <span class="skill-item">Unreal Engine</span>
+                        <span class="skill-item">Nginx</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-database"></i>
+                        Databases & Storage
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-item">MongoDB</span>
+                        <span class="skill-item">Supabase</span>
+                        <span class="skill-item">PubMed API</span>
+                        <span class="skill-item">UMLS</span>
+                        <span class="skill-item">Apache Spark</span>
+                        <span class="skill-item">Hadoop</span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <script src="script.js"></script>
-    </body>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-description">
+                    Always learning. Always shipping. Let's connect if you're building something meaningful 
+                    or interested in discussing research opportunities, collaborations, and innovative projects.
+                </p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>jaiveerbassi@yahoo.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Vallejo, California, United States</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>7076566227</span>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <a href="https://github.com/imjbassi" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/jaiveer-bassi" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/imjbassi/" target="_blank" aria-label="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="mailto:jaiveerbassi@yahoo.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Jaiveer Bassi. All rights reserved.</p>
+                <p>Built with HTML, CSS, and JavaScript. Hosted on GitHub Pages.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-item a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
