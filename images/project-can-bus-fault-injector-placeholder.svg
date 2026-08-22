@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="160" viewBox="0 0 280 160">
+  <rect width="280" height="160" rx="6" fill="#eef1f4"/>
+  <rect x="1" y="1" width="278" height="158" rx="5" fill="none" stroke="#d7dce1" stroke-width="1.5"/>
+  <g transform="translate(140,62)" fill="none" stroke="#9aa5b1" stroke-width="3" stroke-linecap="round">
+    <line x1="-70" y1="0" x2="70" y2="0"/>
+    <circle cx="-40" cy="0" r="7" fill="#c3ccd6" stroke="none"/>
+    <circle cx="0" cy="0" r="7" fill="#c3ccd6" stroke="none"/>
+    <circle cx="40" cy="0" r="7" fill="#c3ccd6" stroke="none"/>
+    <line x1="-40" y1="0" x2="-40" y2="-22"/>
+    <line x1="0" y1="0" x2="0" y2="22"/>
+    <line x1="40" y1="0" x2="40" y2="-22"/>
+  </g>
+  <text x="140" y="120" font-family="Noto Sans, Arial, sans-serif" font-size="13" font-weight="600" fill="#7a8695" text-anchor="middle">CAN Bus Diagnostics Rig</text>
+  <text x="140" y="138" font-family="Noto Sans, Arial, sans-serif" font-size="11" fill="#a3adb8" text-anchor="middle">image coming soon</text>
+</svg>
