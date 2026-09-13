@@ -1,698 +1,110 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Jaiveer Bassi</title>
-    <meta name="author" content="Jaiveer Bassi">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  </head>
-  <body>
-    <table style="width:100%;max-width:1000px;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-      <tbody>
-        <tr>
-          <td>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jaiveer Bassi — robotics, AI/ML, software engineering, and reproducible research.">
+  <meta name="author" content="Jaiveer Bassi">
+  <meta property="og:title" content="Jaiveer Bassi — Robotics & AI/ML">
+  <meta property="og:description" content="Research, robotics systems, machine learning, and full-stack engineering.">
+  <meta property="og:image" content="images/profile/headshot.jpg">
+  <meta property="og:type" content="website">
+  <title>Jaiveer Bassi — Robotics & AI/ML</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top">JB</a>
+    <nav aria-label="Primary navigation"><a href="#research">Research</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Robotics · AI/ML · Software</p>
+        <h1>Jaiveer Bassi</h1>
+        <p class="hero-lede">I build and audit intelligent systems—from robot data pipelines and fault-injection rigs to reproducible machine-learning research.</p>
+        <p>I am an AI Robot Operator at <strong>Physical Intelligence</strong> and Founder &amp; Executive Director of <strong>House of Seva</strong>. I hold an M.S. in Software Engineering and a B.S. in Computer Science.</p>
+        <div class="hero-actions"><a class="button button-primary" href="Resume.pdf">View résumé</a><a class="button" href="https://github.com/imjbassi">GitHub</a><a class="button" href="https://www.researchgate.net/profile/Jaiveer-Bassi">ResearchGate</a></div>
+        <p class="availability">Open to full-time robotics software, AI/ML, and software-engineering opportunities.</p>
+      </div>
+      <div class="portrait-wrap"><img class="portrait" src="images/profile/headshot.jpg" alt="Portrait of Jaiveer Bassi"></div>
+    </section>
 
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:2.5%;width:30%;max-width:30%">
-                    <a href="images/profile-headshot.jpg">
-                      <img style="width:100%;max-width:100%;border-radius:50%;" alt="profile photo" src="images/profile-headshot.jpg">
-                    </a>
-                  </td>
-                  <td style="padding:2.5%;width:70%;vertical-align:middle">
-                    <p style="text-align:center"><name>Jaiveer Bassi</name></p>
-                    <p>
-                      I am a software engineer and AI/ML researcher working at the intersection of robotics, technology, and community. I hold an M.S. in Computer Software Engineering from Grand Canyon University and a B.S. in Computer Science from University of Silicon Valley.
-                    </p>
-                    <p>
-                      I currently work as an AI Robot Operator at Physical Intelligence in San Francisco, generating training data for general-purpose robotics foundation models. I am also the Founder and Executive Director of House of Seva, a California nonprofit serving the Punjabi and South Asian community of Solano County.
-                    </p>
-                    <p>
-                      I have experience as a Software Developer at Kaiser Permanente Regional Laboratory and as an AI Response Evaluator at Handshake AI. My research interests span AI/ML, healthcare informatics, and embodied intelligence.
-                    </p>
-                    <p class="color">I am seeking full-time Software Engineering and AI/ML positions in 2026.</p>
-                    <p style="text-align:center">
-                      <a class="color" href="mailto:jaiveerbassi@yahoo.com">Email</a> &nbsp/&nbsp
-                      <a class="color" href="Resume.pdf">Resume</a> &nbsp/&nbsp
-                      <a class="color" href="https://www.researchgate.net/profile/Jaiveer-Bassi?ev=hdr_xprf">ResearchGate</a> &nbsp/&nbsp
-                      <a class="color" href="https://linkedin.com/in/jaiveer-bassi">LinkedIn</a> &nbsp/&nbsp
-                      <a class="color" href="https://github.com/imjbassi">GitHub</a>
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+    <section id="research" class="section-shell section-block">
+      <div class="section-heading"><div><p class="eyebrow">Current focus</p><h2>Research</h2></div><p>Reproducible work with the claim, evidence, controls, and limitations kept together.</p></div>
+      <div class="research-list">
+        <article class="research-card featured">
+          <a class="research-visual" href="images/research/sampling-budget-embeddings.png"><img src="images/research/sampling-budget-embeddings.png" alt="PCA, TICA, and VAE embeddings across four sampling budgets" loading="lazy"></a>
+          <div class="card-copy"><div class="card-meta"><span class="status current">Manuscript in preparation</span><span>Molecular simulation · Dimensionality reduction</span></div><h3>Sampling-Budget Audit of Dimensionality Reduction for Conformational Landscapes</h3><p>Tests whether metastable states reported by PCA, TICA, and VAEs reflect the free-energy landscape or the number of saved frames. Controlled synthetic landscapes separate sample-size effects from exploration deficits; validation uses two independent 100 ns alanine-dipeptide trajectories.</p><div class="card-links"><a href="https://github.com/imjbassi/sampling-audit">Code &amp; manuscript</a><a href="https://github.com/imjbassi/sampling-audit/blob/main/paper/main.pdf">PDF</a></div></div>
+        </article>
+        <article class="research-card">
+          <a class="research-visual" href="images/research/brain-mri-leakage-examples.png"><img src="images/research/brain-mri-leakage-examples.png" alt="Nearly identical MRI scans found across the benchmark training and test folders" loading="lazy"></a>
+          <div class="card-copy"><div class="card-meta"><span class="status released">Archived release</span><span>Medical imaging · Benchmark audit</span></div><h3>Brain Tumor MRI Benchmark Audit</h3><p>Re-audits a widely used four-class MRI benchmark. Among traceable tumor test images, every patient also appears in training; 216 test images are pixel-identical to training images. The release provides recovered patient identifiers and a patient-disjoint five-fold split.</p><div class="card-links"><a href="https://github.com/imjbassi/Brain-Tumor-MRI-Classification">Code &amp; paper</a><a href="https://doi.org/10.5281/zenodo.22728198">Zenodo DOI</a></div></div>
+        </article>
+        <article class="research-card">
+          <a class="research-visual" href="images/research/adversarial-transfer-budget.png"><img src="images/research/adversarial-transfer-budget.png" alt="Corrected PGD transfer rates across perturbation budgets and model pairs" loading="lazy"></a>
+          <div class="card-copy"><div class="card-meta"><span class="status corrected">Corrected implementation</span><span>Adversarial ML · CIFAR-10</span></div><h3>Transferability of Adversarial Attacks Across Machine-Learning Models</h3><p>Rebuilt the study around CIFAR-10-trained models, validation-selected checkpoints, attacks in raw pixel space, shared cohorts, norm checks, explicit denominators, confidence intervals, and prediction-level reproducibility artifacts. The original near-100% transfer claim is superseded.</p><div class="card-links"><a href="https://github.com/imjbassi/Transferability-of-Adversarial-Attacks">Corrected code</a><a href="https://github.com/imjbassi/Transferability-of-Adversarial-Attacks/blob/main/paper/main.pdf">Revised draft</a><a href="https://doi.org/10.13140/RG.2.2.16410.76489">Earlier preprint</a></div></div>
+        </article>
+        <article class="research-card">
+          <a class="research-visual" href="images/research/demonstration-quality-dose-response.png"><img src="images/research/demonstration-quality-dose-response.png" alt="Closed-loop success and open-loop error across five demonstration failure modes" loading="lazy"></a>
+          <div class="card-copy"><div class="card-meta"><span class="status preprint">Preprint</span><span>Robot learning · Data quality</span></div><h3>Not All Bad Demonstrations Are Equally Bad</h3><p>A controlled simulation study treating demonstration quality—not model architecture—as the independent variable. It compares five failure modes and shows why held-out action MSE can misrepresent closed-loop policy damage. Current results use a 2D task and three seeds.</p><div class="card-links"><a href="https://github.com/imjbassi/demo-quality-robustness">Code &amp; results</a><a href="https://github.com/imjbassi/demo-quality-robustness/blob/main/paper.pdf">PDF</a></div></div>
+        </article>
+        <article class="research-card compact">
+          <a class="research-visual" href="images/research/smoothness-metrics-audit.png"><img src="images/research/smoothness-metrics-audit.png" alt="Trajectory smoothness metric results under episode-length controls" loading="lazy"></a>
+          <div class="card-copy"><div class="card-meta"><span class="status published">Preprint</span><span>Robot learning · Demonstration curation</span></div><h3>Smoothness Ranks Skill, Not Success</h3><p>Audits published trajectory-smoothness curation metrics under episode-length controls, finding that they primarily rank operator skill rather than demonstration success.</p><div class="card-links"><a href="https://doi.org/10.13140/RG.2.2.26129.60000">DOI</a><a href="https://www.researchgate.net/publication/413763343_Smoothness_Ranks_Skill_Not_Success_An_Audit_of_Published_Trajectory-Smoothness_Curation_Metrics_Under_Episode-Length_Controls">ResearchGate</a></div></div>
+        </article>
+        <article class="research-card compact">
+          <a class="research-visual" href="images/research/edge-ai-quantization.jpg"><img src="images/research/edge-ai-quantization.jpg" alt="MobileNetV2 model size after FP16 and INT8 quantization" loading="lazy"></a>
+          <div class="card-copy"><div class="card-meta"><span class="status published">Preprint</span><span>Edge AI · Model deployment</span></div><h3>Efficient Packaging and Deployment of AI Models for Edge Inference</h3><p>Studies quantization, pruning, lightweight containers, and specialized runtimes for deploying neural networks on embedded GPUs and CPUs.</p><div class="card-links"><a href="https://doi.org/10.13140/RG.2.2.23010.59844">DOI</a></div></div>
+        </article>
+        <article class="research-card compact">
+          <a class="research-visual" href="images/research/local-code-assistants-benchmark.png"><img src="images/research/local-code-assistants-benchmark.png" alt="Benchmark comparison of local transformer-based coding assistants" loading="lazy"></a>
+          <div class="card-copy"><div class="card-meta"><span class="status published">Preprint</span><span>LLMs · Local inference</span></div><h3>Local Deployment of Transformer-Based Code Assistants</h3><p>Examines the speed, accuracy, memory, and deployment tradeoffs of running coding assistants on consumer hardware.</p><div class="card-links"><a href="https://doi.org/10.13140/RG.2.2.30622.86081">DOI</a></div></div>
+        </article>
+      </div>
+    </section>
 
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:0;width:100%;vertical-align:middle">
-                    <table class="container" style="max-width:900px;width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-                      <tr>
-                        <th width="150" valign="top" align="center" style="padding:10px;height:140px;">
-                          <div style="height:95px;display:flex;align-items:center;justify-content:center;">
-                            <img src="images/edu-solano-community-college-logo.png" alt="sym" width="80" height="80" style="object-fit:contain;background:transparent;">
-                          </div>
-                          <p style="line-height:1.3;font-size:10pt;font-weight:500;margin-top:10px;">Solano Community College<br>Computer &amp; Info Sciences<br>2020 - 2021</p>
-                        </th>
-                        <th width="150" valign="top" align="center" style="padding:10px;height:140px;">
-                          <div style="height:95px;display:flex;align-items:center;justify-content:center;">
-                            <img src="images/edu-university-of-silicon-valley-logo.png" alt="sym" width="95" height="95" style="object-fit:cover;object-position:center;background:transparent;">
-                          </div>
-                          <p style="line-height:1.3;font-size:10pt;font-weight:500;margin-top:10px;">University of Silicon Valley<br>B.S. in CS<br>2021 - 2023</p>
-                        </th>
-                        <th width="150" valign="top" align="center" style="padding:10px;height:140px;">
-                          <div style="height:95px;display:flex;align-items:center;justify-content:center;">
-                            <img src="images/edu-grand-canyon-university-logo.png" alt="sym" width="95" height="95" style="object-fit:cover;object-position:center;background:transparent;">
-                          </div>
-                          <p style="line-height:1.3;font-size:10pt;font-weight:500;margin-top:10px;">Grand Canyon University<br>M.S. in Computer Software Engineering<br>2024 - 2025</p>
-                        </th>
-                        <th width="150" valign="top" align="center" style="padding:10px;height:140px;">
-                          <div style="height:95px;display:flex;align-items:center;justify-content:center;">
-                            <img src="images/exp-kaiser-permanente-logo.png" alt="sym" width="95" height="95" style="object-fit:contain;background:transparent;">
-                          </div>
-                          <p style="line-height:1.3;font-size:10pt;font-weight:500;margin-top:10px;">Kaiser Permanente<br>Software Developer<br>Oct 2023 - June 2024</p>
-                        </th>
-                        <th width="150" valign="top" align="center" style="padding:10px;height:140px;">
-                          <div style="height:95px;display:flex;align-items:center;justify-content:center;">
-                            <img src="images/exp-handshake-ai-logo.png" alt="Handshake AI" width="80" height="80" style="object-fit:contain;background:transparent;">
-                          </div>
-                          <p style="line-height:1.3;font-size:10pt;font-weight:500;margin-top:10px;">Handshake AI<br>AI Response Evaluator<br>Mar 2026 - June 2026</p>
-                        </th>
-                        <th width="150" valign="top" align="center" style="padding:10px;height:140px;">
-                          <div style="height:95px;display:flex;align-items:center;justify-content:center;">
-                            <img src="images/exp-physical-intelligence-logo.jpg" alt="Physical Intelligence" width="80" height="80" style="object-fit:contain;background:transparent;">
-                          </div>
-                          <p style="line-height:1.3;font-size:10pt;font-weight:500;margin-top:10px;">Physical Intelligence<br>AI Robot Operator<br>May 2026 - Present</p>
-                        </th>
-                        <th width="150" valign="top" align="center" style="padding:10px;height:140px;">
-  <div style="height:95px;display:flex;align-items:center;justify-content:center;">
-    <img src="images/exp-house-of-seva-logo.png" alt="House of Seva" width="80" height="80" style="object-fit:contain;background:transparent;">
-  </div>
-  <p style="line-height:1.3;font-size:10pt;font-weight:500;margin-top:10px;">House of Seva<br>Founder &amp; Executive Director<br>June 2026 - Present</p>
-</th>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+    <section id="projects" class="section-shell section-block">
+      <div class="section-heading"><div><p class="eyebrow">Build, break, measure</p><h2>Selected projects</h2></div><p>Robotics infrastructure, fault characterization, ML tooling, and production software.</p></div>
+      <div class="project-grid">
+        <article class="project-card"><img src="images/projects/k8s-fault-tolerant-pipeline.png" alt="Robot telemetry pipeline dashboard" loading="lazy"><div><p class="project-kicker">Kubernetes · Redis Streams · PostgreSQL</p><h3>Fault-Tolerant Robot Telemetry Pipeline</h3><p>A multi-stage pipeline designed for deliberate pod and network failures, with durable acknowledgements, replay-safe writes, health probes, observability, and a chaos harness.</p><a href="https://github.com/imjbassi/k8s-fault-tolerant-pipeline">GitHub →</a></div></article>
+        <article class="project-card"><img src="images/projects/ur5e-rtde-harness.gif" alt="UR5e RTDE harness terminal demonstration" loading="lazy"><div><p class="project-kicker">URSim · RTDE · Fault injection</p><h3>UR5e RTDE Harness</h3><p>Simulator-backed control and synchronized telemetry with reproducible tests for connection failures, stale handles, hangs, and native crashes.</p><a href="https://github.com/imjbassi/ur5e-rtde-harness">GitHub →</a></div></article>
+        <article class="project-card"><img src="images/projects/habitua.png" alt="Habitua iOS application screens" loading="lazy"><div><p class="project-kicker">SwiftUI · AVAudioEngine · DSP</p><h3>Habitua</h3><p>A dependency-free tinnitus-habituation app with real-time generated sound enrichment, personalized notch filtering, guided exercises, and progress tracking.</p><a href="https://github.com/imjbassi/Habitua">GitHub →</a></div></article>
+        <article class="project-card"><img src="images/projects/fleet-triage.gif" alt="Fleet Triage robot health dashboard" loading="lazy"><div><p class="project-kicker">Python · Streamlit · Diagnostics</p><h3>Fleet Triage</h3><p>Robot-fleet log analysis with fault classification, recurrence detection, anomaly detection, rule-based root-cause analysis, and a live health dashboard.</p><a href="https://github.com/imjbassi/fleet-triage">GitHub →</a></div></article>
+        <article class="project-card"><img src="images/projects/grasp-annotation-dataset.gif" alt="Robot grasp annotation workflow" loading="lazy"><div><p class="project-kicker">Computer vision · Labelbox · COCO</p><h3>Grasp Annotation Pipeline</h3><p>A data-operations workflow for robot-arm grasp annotations with bounding boxes, keypoints, failure labels, and automated COCO JSON export.</p><a href="https://github.com/imjbassi/grasp-annotation-dataset">GitHub →</a></div></article>
+        <article class="project-card"><img src="images/projects/ai-model-packager.gif" alt="AI Model Packager command-line demonstration" loading="lazy"><div><p class="project-kicker">Python · Docker · MLOps</p><h3>AI Model Packager</h3><p>A library and CLI for packaging machine-learning models into portable, optimized Docker inference images.</p><a href="https://github.com/imjbassi/ai-model-packager">GitHub →</a></div></article>
+        <article class="project-card"><img src="images/projects/chess-reinforcement-learning.gif" alt="Chess reinforcement-learning interface" loading="lazy"><div><p class="project-kicker">C++ · PyTorch · Self-play</p><h3>Chess-RL Engine</h3><p>An AlphaZero-inspired system combining a C++ bitboard engine, PyTorch neural network, self-play training, and a PyGame interface.</p><a href="https://github.com/imjbassi/chess-reinforcement-learning">GitHub →</a></div></article>
+        <article class="project-card"><img src="images/projects/careertuner.jpg" alt="CareerTuner resume analysis interface" loading="lazy"><div><p class="project-kicker">OpenAI · React · Node.js · Supabase</p><h3>CareerTuner</h3><p>An AI resume analyzer with job-specific feedback, ATS scoring, skill-gap analysis, and PDF export.</p><a href="https://careertuner.org">Live site →</a></div></article>
+        <article class="project-card"><img src="images/projects/medstract.jpg" alt="MedStract biomedical research interface" loading="lazy"><div><p class="project-kicker">Python · PubMed · NLP</p><h3>MedStract</h3><p>A biomedical literature tool for searching PubMed, rewriting summaries for different audiences, exporting citations, and generating PDFs.</p><a href="https://medstract.net">Live site →</a></div></article>
+        <article class="project-card"><img src="images/projects/castline-studio.jpg" alt="Castline Studio order interface" loading="lazy"><div><p class="project-kicker">Next.js · TypeScript · WebAssembly</p><h3>Castline Studio Order System</h3><p>An e-commerce workflow with client-side STL analysis, Etsy and shipping integrations, automated email, and deployment on Vercel.</p><a href="https://castline.studio">Live site →</a></div></article>
+      </div>
+    </section>
 
-            <hr>
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:100%;vertical-align:middle">
-                    <br>
-                    <heading>Research Papers</heading>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+    <section class="section-shell section-block two-column">
+      <div><div class="section-heading simple"><div><p class="eyebrow">Writing</p><h2>Articles</h2></div></div><div class="article-list">
+        <article class="article-card"><img src="images/articles/can-bus-faults.png" alt="CAN bus fault-diagnostics rig" loading="lazy"><div><h3>Simulating Real Robot Failures on a Breadboard</h3><p>A three-node CAN bus built to induce and diagnose failures that software logs alone cannot explain.</p><a href="https://imjbassi.medium.com/simulating-real-robot-failures-a3c62fbfc62d">Read on Medium →</a></div></article>
+        <article class="article-card"><img src="images/articles/gello-teleoperation.gif" alt="Low-cost leader-follower teleoperation rig" loading="lazy"><div><h3>A $30 Teleoperation Rig</h3><p>Rebuilding the core idea behind GELLO-style robot demonstration collection with direct joint-space control.</p><a href="https://imjbassi.medium.com/a-30-teleoperation-rig-rebuilding-the-core-idea-behind-robot-demonstration-data-69df3d1431f3">Read on Medium →</a></div></article>
+      </div></div>
+      <div id="experience"><div class="section-heading simple"><div><p class="eyebrow">Timeline</p><h2>Experience &amp; education</h2></div></div><div class="timeline">
+        <div class="timeline-item"><img src="images/logos/physical-intelligence.jpg" alt="Physical Intelligence"><div><h3>AI Robot Operator</h3><p>Physical Intelligence · May 2026–Present</p></div></div>
+        <div class="timeline-item"><img src="images/logos/house-of-seva.png" alt="House of Seva"><div><h3>Founder &amp; Executive Director</h3><p>House of Seva · June 2026–Present</p></div></div>
+        <div class="timeline-item"><img src="images/logos/handshake-ai.png" alt="Handshake AI"><div><h3>LLM Response Evaluator</h3><p>Handshake AI · April–June 2026</p></div></div>
+        <div class="timeline-item"><img src="images/logos/kaiser-permanente.png" alt="Kaiser Permanente"><div><h3>Software Developer</h3><p>Kaiser Permanente · October 2023–June 2024</p></div></div>
+        <div class="timeline-item"><img src="images/logos/grand-canyon-university.png" alt="Grand Canyon University"><div><h3>M.S., Software Engineering</h3><p>Grand Canyon University · 2024–2025</p></div></div>
+        <div class="timeline-item"><img src="images/logos/university-of-silicon-valley.png" alt="University of Silicon Valley"><div><h3>B.S., Computer Science</h3><p>University of Silicon Valley · 2021–2023</p></div></div>
+      </div></div>
+    </section>
 
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle">
-                    <div class="one">
-                      <img src="images/paper-edge-ai-quantization.jpg" width="280" alt="Edge AI Quantization">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" height="210">
-                    <papertitle>Expanded Efficient Packaging and Deployment of AI Models for Edge Inference</papertitle>
-                    <br>
-                    <strong>Jaiveer Bassi</strong>
-                    <br>
-                    <em>Edge AI, Model Optimization, Deployment</em>
-                    <br>
-                    <span>Presented a comprehensive pipeline for efficiently packaging and deploying AI models for edge inference using quantization, pruning, lightweight containerization, and specialized runtime frameworks. Achieved up to 4× model size reduction and 50–70% faster inference on edge devices with minimal accuracy loss, validated on MobileNet and other models deployed on embedded GPUs and CPUs.</span>
-                    <br>
-                    <a class="color" href="https://doi.org/10.13140/RG.2.2.23010.59844">DOI: 10.13140/RG.2.2.23010.59844</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle">
-                    <div class="one">
-                      <img src="images/paper-brain-tumor-classification.png" alt="Brain Tumor Classification"
-                           style="max-width:100%;height:auto;max-height:210px;object-fit:contain;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" height="210">
-                    <papertitle>Brain Tumor Classification with Pretrained CNNs in PyTorch</papertitle>
-                    <br>
-                    <strong>Jaiveer Bassi</strong>
-                    <br>
-                    <em>Deep Learning, Medical Imaging</em>
-                    <br>
-                    <span>Built a reproducible ResNet-18-based classification pipeline for brain MRI scans using transfer learning and PyTorch. Classified brain tumors into four categories (glioma, meningioma, pituitary, healthy) from 7,000+ MRI images.</span>
-                    <br>
-                    <a class="color" href="https://doi.org/10.13140/RG.2.2.21638.28484">DOI: 10.13140/RG.2.2.21638.28484</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle">
-                    <div class="one">
-                      <img src="images/paper-transformer-code-assistants.png" width="280" alt="Transformer Code Assistants">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" height="210">
-                    <papertitle>Local Deployment of Transformer-based Code Assistants: Balancing Speed, Accuracy, and Efficiency</papertitle>
-                    <br>
-                    <strong>Jaiveer Bassi</strong>
-                    <br>
-                    <em>Transformers, LLMs, Code Generation</em>
-                    <br>
-                    <span>Researched balancing speed, accuracy, and efficiency for locally deployed LLM code assistants on consumer hardware.</span>
-                    <br>
-                    <a class="color" href="https://doi.org/10.13140/RG.2.2.30622.86081">DOI: 10.13140/RG.2.2.30622.86081</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle">
-                    <div class="one">
-                      <img src="images/paper-adversarial-attacks.png" width="280" alt="Adversarial AI">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" height="210">
-                    <papertitle>Evaluating Transferability of Adversarial Attacks Across Machine Learning Models</papertitle>
-                    <br>
-                    <strong>Jaiveer Bassi</strong>
-                    <br>
-                    <em>Adversarial AI, CNNs</em>
-                    <br>
-                    <span>Analyzed cross-architecture adversarial attack transfer using FGSM, PGD, and CW on ResNet, VGG, and MobileNet (CIFAR-10).</span>
-                    <br>
-                    <a class="color" href="https://doi.org/10.13140/RG.2.2.16410.76489">DOI: 10.13140/RG.2.2.16410.76489</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle">
-                    <div class="one">
-                      <img src="images/paper-smoothness-ranks-skill.png" width="280" alt="Smoothness Ranks Skill, Not Success">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" height="210">
-                    <papertitle><a class="color" href="https://www.researchgate.net/publication/413763343_Smoothness_Ranks_Skill_Not_Success_An_Audit_of_Published_Trajectory-Smoothness_Curation_Metrics_Under_Episode-Length_Controls">Smoothness Ranks Skill, Not Success: An Audit of Published Trajectory-Smoothness Curation Metrics Under Episode-Length Controls</a></papertitle>
-                    <br>
-                    <strong>Jaiveer Bassi</strong>
-                    <br>
-                    <em>Robot Learning, Demonstration Curation, Imitation Learning</em>
-                    <br>
-                    <span>Audited published trajectory-smoothness curation metrics under episode-length controls, finding they primarily rank operator skill rather than demonstration success in robot learning datasets.</span>
-                    <br>
-                    <a class="color" href="https://doi.org/10.13140/RG.2.2.26129.60000">DOI: 10.13140/RG.2.2.26129.60000</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <br><br>
-            <hr>
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:100%;vertical-align:middle">
-                    <br>
-                    <heading>Articles</heading>
-                    <br>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle;padding:10px;">
-                    <div class="one">
-                      <img src="images/article-robot-failures.png" alt="Simulating Real Robot Failures on a Breadboard" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle><a class="color" href="https://imjbassi.medium.com/simulating-real-robot-failures-a3c62fbfc62d?sharedUserId=imjbassi">Simulating Real Robot Failures on a Breadboard</a></papertitle>
-                    <br><br>
-                    <em>CAN Bus Diagnostics Rig | C++, Python, SocketCAN, Embedded Systems</em>
-                    <br><br>
-                    <span>Built a 3-node CAN bus on custom hardware and induced real bus-off, arbitration, and connector faults, diagnosing each via SocketCAN error-state analysis with a reproducible fault catalog.</span>
-                    <br><br>
-                    <a class="color" href="https://imjbassi.medium.com/simulating-real-robot-failures-a3c62fbfc62d?sharedUserId=imjbassi">[Read on Medium]</a> &nbsp;/&nbsp; <a class="color" href="https://github.com/imjbassi/can-bus-fault-injector">[GitHub]</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle;padding:10px;">
-                    <div class="one">
-                      <img src="images/article-teleoperation-rig.gif" alt="A $30 Teleoperation Rig" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle><a class="color" href="https://imjbassi.medium.com/a-30-teleoperation-rig-rebuilding-the-core-idea-behind-robot-demonstration-data-69df3d1431f3?sharedUserId=imjbassi">A $30 Teleoperation Rig: Rebuilding the Core Idea Behind Robot Demonstration Data</a></papertitle>
-                    <br><br>
-                    <em>GELLO | C++, Python, Arduino, Servo Control</em>
-                    <br><br>
-                    <span>Rebuilt the core mechanism behind GELLO-style robot teleoperation for under $30, substituting potentiometer-based leader encoding for the servo-as-encoder approach used in production rigs, preserving direct joint-space control with no inverse kinematics.</span>
-                    <br><br>
-                    <a class="color" href="https://imjbassi.medium.com/a-30-teleoperation-rig-rebuilding-the-core-idea-behind-robot-demonstration-data-69df3d1431f3?sharedUserId=imjbassi">[Read on Medium]</a> &nbsp;/&nbsp; <a class="color" href="https://github.com/imjbassi/gello-lite">[GitHub]</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <br><br>
-            <hr>
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:100%;vertical-align:middle">
-                    <br>
-                    <heading>Projects</heading>
-                    <br>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle;padding:10px;">
-                    <div class="one">
-                      <img src="images/ur5e.gif" alt="UR5e Fault Injection and Diagnostics Harness" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle>UR5e Fault Injection &amp; Diagnostics Harness</papertitle>
-                    <br><br>
-                    <em>Python, RTDE, Docker, URSim</em>
-                    <br><br>
-                    <span>Built a control and fault-injection harness against UR5e's production RTDE interface using UR's official simulator, reproducing a real segmentation fault from a production traceback and characterizing which connection failures are catchable in application code versus requiring external process supervision. Logged synchronized joint telemetry at fixed sample rate with automated gap detection to recover diagnostic evidence from failures that crash the process before any exception is raised.</span>
-                    <br><br>
-                    <a class="color" href="https://github.com/imjbassi/ur5e-rtde-harness">[GitHub]</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle;padding:10px;">
-                    <div class="one">
-                      <img src="images/demo.gif" alt="Imitation Learning Failure Mode Analysis" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle>Imitation Learning Failure Mode Analysis</papertitle>
-                    <br><br>
-                    <em>Python, Imitation Learning, Closed-Loop Policy Evaluation</em>
-                    <br><br>
-                    <span>Built the codebase for published research quantifying how demonstration failure modes degrade closed-loop policy performance, directly informing how bad demonstrations propagate through imitation learning pipelines.</span>
-                    <br><br>
-                    <a class="color" href="https://github.com/imjbassi/demo-quality-robustness">[GitHub]</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle;padding:10px;">
-                    <div class="one">
-                      <img src="images/project-grasp-annotation-dataset.gif" alt="Grasp Annotation Dataset" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle>grasp-annotation-dataset</papertitle>
-                    <br><br>
-                    <em>Python, Labelbox, COCO JSON, Data Ops</em>
-                    <br><br>
-                    <span>Data-ops pipeline for building a robot-arm grasp annotation dataset on Labelbox's free tier, exported to COCO JSON. Runs with no hardware.</span>
-                    <br><br>
-                    <a class="color" href="https://github.com/imjbassi/grasp-annotation-dataset">[GitHub]</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle;padding:10px;">
-                    <div class="one">
-                      <img src="images/project-fleet-triage.gif" alt="Fleet Fault Triage Dashboard" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle>fleet-triage: AI Fleet Analytics Tool</papertitle>
-                    <br><br>
-                    <em>Python, Streamlit, ML, Anomaly Detection</em>
-                    <br><br>
-                    <span>Built a synthetic robot fleet log analyzer featuring fault classification, recurrence detection, anomaly detection, and rule-based root cause analysis with a real-time Streamlit fleet health dashboard. Designed an end-to-end ML pipeline for processing structured log data across distributed robot systems, enabling automated triage and reporting without manual intervention.</span>
-                    <br><br>
-                    <a class="color" href="https://github.com/imjbassi/fleet-triage">[GitHub]</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle;padding:10px;">
-                    <div class="one">
-                      <img src="images/project-k8s-fault-tolerant-pipeline.png" alt="Fault-tolerant robot telemetry pipeline on Kubernetes" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle>k8s-fault-tolerant-pipeline</papertitle>
-                    <br><br>
-                    <em>Kubernetes, Redis Streams, Postgres, Chaos Engineering</em>
-                    <br><br>
-                    <span>Multi-stage robot-telemetry pipeline on Kubernetes, built so it can be broken on purpose. Synthetic UR5e joint telemetry flows through ingestion, validation, windowing, and batch anomaly detection, with Redis Streams carrying work between stages and Postgres storing the result. A fault-injection harness kills pods, cuts network links, and records what actually recovered.</span>
-                    <br><br>
-                    <a class="color" href="https://github.com/imjbassi/k8s-fault-tolerant-pipeline">[GitHub]</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle;padding:10px;">
-                    <div class="one">
-                      <img src="images/project-resnet-gradient-flow.png" alt="ResNet Gradient Flow" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle>ResNet vs Plain CNN: Understanding Residual Learning</papertitle>
-                    <br><br>
-                    <em>PyTorch, Deep Learning, Computer Vision, Matplotlib</em>
-                    <br><br>
-                    <span>Implemented ResNet-18 from scratch and compared against a plain CNN to demonstrate why residual connections matter. Achieved 10% accuracy improvement through skip connections that solve the vanishing gradient problem. Includes comprehensive visualization suite with Grad-CAM attention maps, gradient flow analysis, and interactive Streamlit dashboard.</span>
-                    <br><br>
-                    <a class="color" href="https://github.com/imjbassi/resnet">[GitHub]</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle;padding:10px;">
-                    <div class="one">
-                      <img src="images/project-ai-model-packager.gif" alt="AI Model Packager" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle>AI Model Packager</papertitle>
-                    <br><br>
-                    <em>Python, Docker, MLOps</em>
-                    <br><br>
-                    <span>A Python library and CLI to package ML models into Docker images for fast inference deployment. Supports multiple model formats and optimized containerization.</span>
-                    <br><br>
-                    <a class="color" href="https://github.com/imjbassi/ai-model-packager">[GitHub]</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle;padding:10px;">
-                    <div class="one">
-                      <img src="images/project-vxlan-ospf-simulator.gif" alt="VXLAN-OSPF Network Simulator" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle>VXLAN-OSPF Network Simulator</papertitle>
-                    <br><br>
-                    <em>Python, Networking, VXLAN, OSPF</em>
-                    <br><br>
-                    <span>Network simulation tool for VXLAN overlay networks with OSPF routing protocol implementation. Simulates spine-leaf fabric topology with VTEPs and VNIs.</span>
-                    <br><br>
-                    <a class="color" href="https://github.com/imjbassi/vxlan-ospf-simulator">[GitHub]</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle;padding:10px;">
-                    <div class="one">
-                      <img src="images/project-neural-net-mapper.gif" alt="Neural Net Mapper" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle>Neural Net Mapper</papertitle>
-                    <br><br>
-                    <em>Python, NumPy, Matplotlib</em>
-                    <br><br>
-                    <span>An interactive Python tool that trains a multi-layer perceptron on a synthetic shapes dataset and maps its inner workings over time. Visualizes neuron activations, weight magnitudes, training loss, accuracy, and forward passes through animated network diagrams using Matplotlib.</span>
-                    <br><br>
-                    <a class="color" href="https://github.com/imjbassi/neural-net-mapper">[GitHub]</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle;padding:10px;">
-                    <div class="one">
-                      <img src="images/project-adversarial-attack-visualizer.gif" alt="Adversarial Attack Visualizer" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle>Adversarial Attack Visualizer</papertitle>
-                    <br><br>
-                    <em>PyTorch, Python, OpenCV, CUDA</em>
-                    <br><br>
-                    <span>Designed a GUI tool to visualize adversarial attacks (FGSM, PGD, C&amp;W, DeepFool) with real-time image comparisons, perturbation maps, and 3D surface plots.</span>
-                    <br><br>
-                    <a class="color" href="https://github.com/imjbassi/adversarial-visualizer">[GitHub]</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;padding:10px;vertical-align:middle;">
-                    <div class="one" style="display:flex;align-items:center;height:100%;">
-                      <img src="images/project-chess-reinforcement-learning.gif" alt="Chess RL" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle>Chess AI Engine Using Reinforcement Learning</papertitle>
-                    <br><br>
-                    <em>C++, PyTorch, Python, PyGame</em>
-                    <br><br>
-                    <span>Built a self-play chess engine with a C++ backend and PyTorch network, featuring bitboard move generation and real-time GUI visualization. Implements minimax with alpha–beta pruning and neural network evaluation for position assessment.</span>
-                    <br><br>
-                    <a class="color" href="https://github.com/imjbassi/chess-reinforcement-learning">[GitHub]</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle;padding:10px;">
-                    <div class="one">
-                      <img src="images/project-medstract.jpg" alt="MedStract" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle>MedStract.net</papertitle>
-                    <br><br>
-                    <em>Streamlit, BioBERT, PubMed API, UMLS, Python</em>
-                    <br><br>
-                    <span>Built a biomedical research platform with PubMed integration for querying abstracts, summarizing with BioBERT, and visualizing author–citation networks and keyword clusters.</span>
-                    <br><br>
-                    <a class="color" href="https://medstract.net">MedStract.net</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:30%;vertical-align:middle;padding:10px;">
-                    <div class="one">
-                      <img src="images/project-careertuner.jpg" alt="CareerTuner" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-                    </div>
-                  </td>
-                  <td width="70%" valign="middle" style="padding:10px;">
-                    <papertitle>CareerTuner.org</papertitle>
-                    <br><br>
-                    <em>OpenAI, React, Node.js, Supabase, Tailwind, PDFKit</em>
-                    <br><br>
-                    <span>AI-powered resume analyzer with GPT-based feedback, ATS scoring, skills matching, Supabase backend, Tailwind UI, and PDF export.</span>
-                    <br><br>
-                    <a class="color" href="https://CareerTuner.org">CareerTuner.org</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-<table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-  <tbody>
-    <tr>
-      <td style="width:30%;vertical-align:middle;padding:10px;">
-        <div class="one">
-          <img src="images/project-castline-studio.jpg" alt="Castline Studio" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-        </div>
-      </td>
-      <td width="70%" valign="middle" style="padding:10px;">
-        <papertitle>Castline Studio Order System</papertitle>
-        <br><br>
-        <em>Next.js 14, TypeScript, WebAssembly, Vercel, REST APIs</em>
-        <br><br>
-        <span>Built an order management web app with Next.js 14 (App Router, TypeScript) featuring real-time STL file analysis via a custom WebAssembly/JavaScript parser to calculate volume, dimensions, and print cost client-side. Integrates Etsy REST API, EasyPost for shipping, and Resend for automated emails. Powers a $2K+/month e-commerce business with a fully automated order pipeline.</span>
-        <br><br>
-        <a class="color" href="https://castline.studio">castline.studio</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<br>
-<table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-  <tbody>
-    <tr>
-      <td style="width:30%;vertical-align:middle;padding:10px;">
-        <div class="one">
-          <img src="images/project-habitua.png" alt="Habitua" style="max-width:100%;height:auto;max-height:210px;object-fit:contain;border-radius:4px;">
-        </div>
-      </td>
-      <td width="70%" valign="middle" style="padding:10px;">
-        <papertitle>Habitua</papertitle>
-        <br><br>
-        <em>Swift, SwiftUI, AVAudioEngine, Swift Charts</em>
-        <br><br>
-        <span>iOS tinnitus therapy app built from scratch with real-time audio synthesis using custom biquad IIR filters, pink/brown noise DSP, and a personalized notch filter tuned to the user's matched tinnitus pitch, with zero third-party dependencies. Includes guided habituation exercises and a progressive silence-exposure ladder grounded in Tinnitus Retraining Therapy principles, with Swift Charts tracking distress and awareness over time.</span>
-        <br><br>
-        <a class="color" href="https://github.com/imjbassi/Habitua">[GitHub]</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<br>
-
-            <hr>
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:100%;vertical-align:middle">
-                    <br>
-                    <heading>Technical Skills</heading>
-                    <br><br>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:100%;padding:0 10px;">
-                    <p><strong>Languages:</strong> Python, TypeScript, JavaScript, SQL, C++, Java, HTML/CSS</p>
-                    <p><strong>Robotics & Systems:</strong> Linux (systemd, dmesg, journalctl), USB/serial debugging, CAN bus fundamentals, C, x86-64 Assembly, Bash scripting, distributed system diagnostics</p>
-                    <p><strong>Frontend:</strong> React, Next.js, Tailwind CSS</p>
-                    <p><strong>Backend:</strong> Node.js, Express, Flask, RESTful APIs, Docker, Git, CI/CD, Serverless</p>
-                    <p><strong>AI/ML:</strong> OpenAI API, LangChain, PyTorch, HuggingFace, RAG Pipelines, Prompt Engineering</p>
-                    <p><strong>Data & Cloud:</strong> PostgreSQL, MongoDB, Supabase, Vercel, AWS, Google Cloud</p>
-                    <p><strong>Other:</strong> WebAssembly, OAuth 2.0, Pandas, NumPy, OpenCV</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <br>
-            <hr>
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:100%;vertical-align:middle">
-                    <br>
-                    <heading>Certifications</heading>
-                    <br><br>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-              <tbody>
-                <tr>
-                  <td style="width:100%;padding:0 10px;">
-                    <p><strong>HackerRank Software Engineer Certificate</strong> &mdash; Mar 2026</p>
-                    <p><strong>Cisco Network Support and Security</strong> &mdash; Sep 2025</p>
-                    <p><strong>IBM Artificial Intelligence</strong> &mdash; Aug 2025</p>
-                    <p><strong>Stanford AI/ML in Healthcare</strong> &mdash; Jun 2025</p>
-                    <p><strong>Google Project Management</strong> &mdash; Sep 2024</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <br><br>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+    <section class="section-shell section-block skills"><div class="section-heading simple"><div><p class="eyebrow">Toolkit</p><h2>Technical strengths</h2></div></div><div class="skill-grid">
+      <div><h3>Robotics &amp; systems</h3><p>Robot teleoperation, RTDE, Linux diagnostics, CAN bus, SocketCAN, embedded systems, fault injection, distributed-system debugging</p></div>
+      <div><h3>AI/ML &amp; research</h3><p>PyTorch, computer vision, adversarial ML, dimensionality reduction, statistical evaluation, reproducible experiments, scientific Python</p></div>
+      <div><h3>Infrastructure</h3><p>Kubernetes, Docker, Redis Streams, PostgreSQL, observability, CI/CD, chaos engineering, AWS, Vercel</p></div>
+      <div><h3>Software</h3><p>Python, C++, Swift, TypeScript, JavaScript, SQL, React, Next.js, Flask, Node.js, REST APIs</p></div>
+    </div></section>
+  </main>
+  <footer id="contact"><div class="section-shell footer-inner"><div><p class="eyebrow">Let’s connect</p><h2>Building something difficult?</h2></div><div class="footer-links"><a href="mailto:jaiveerbassi@yahoo.com">Email</a><a href="https://linkedin.com/in/jaiveer-bassi">LinkedIn</a><a href="https://github.com/imjbassi">GitHub</a><a href="https://www.researchgate.net/profile/Jaiveer-Bassi">ResearchGate</a></div></div></footer>
+</body>
 </html>
