@@ -71,6 +71,7 @@ nav a { color: var(--ink); font-size: .9rem; font-weight: 600; text-decoration: 
 .project-kicker { margin-bottom: 9px; color: var(--warm); font-size: .76rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 
 .two-column { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 60px; }
+.two-column .section-heading.simple { min-height: 154px; align-items: flex-end; }
 .article-list, .timeline { display: grid; gap: 16px; }
 .article-card { display: grid; grid-template-columns: 150px 1fr; gap: 20px; padding: 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
 .article-card img { width: 150px; height: 130px; border-radius: 9px; object-fit: cover; }
@@ -100,6 +101,7 @@ footer { margin-top: 70px; color: #fff; background: radial-gradient(circle at 24
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .portrait-wrap { grid-row: 1; width: min(62vw, 320px); }
   .research-card, .two-column, .project-grid { grid-template-columns: 1fr; }
+  .two-column .section-heading.simple { min-height: 0; }
   .research-visual, .research-visual img { min-height: 220px; max-height: 360px; }
 }
 @media (max-width: 600px) {
