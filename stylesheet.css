@@ -78,6 +78,7 @@ nav a { color: var(--ink); font-size: .9rem; font-weight: 600; text-decoration: 
 .article-card p { color: var(--muted); font-size: .92rem; }
 .timeline-item { display: flex; gap: 16px; align-items: center; padding: 13px 0; border-bottom: 1px solid var(--line); }
 .timeline-item img { width: 52px; height: 52px; flex: 0 0 auto; border-radius: 10px; background: #fff; object-fit: contain; }
+.timeline-item img.gcu-logo { object-fit: cover; object-position: center; }
 .timeline-item h3 { margin: 0 0 3px; font-size: 1rem; }
 .timeline-item p { margin: 0; color: var(--muted); font-size: .9rem; }
 
