@@ -67,7 +67,7 @@ nav a { color: var(--ink); font-size: .9rem; font-weight: 600; text-decoration: 
 .project-card { overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .project-card > img { width: 100%; height: auto; aspect-ratio: 16 / 9; padding: 10px; background: #f8e7df; object-fit: contain; }
 .project-card > div { padding: 26px; }
-.project-media { display: grid; grid-template-columns: 1.3fr .75fr; grid-template-rows: minmax(0, 1fr); gap: 8px; margin: 0; aspect-ratio: 16 / 9; padding: 10px; background: #f8e7df; }
+.project-media { display: grid; grid-template-columns: 1.3fr .56fr; grid-template-rows: minmax(0, 1fr); gap: 8px; margin: 0; aspect-ratio: 16 / 9; padding: 10px; background: #f8e7df; }
 .project-media img { width: 100%; height: 100%; object-fit: contain; }
 .project-media.media-portrait { grid-template-columns: auto auto; justify-content: center; }
 .project-media.media-portrait img { width: auto; max-width: 100%; }
