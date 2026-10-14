@@ -19,7 +19,7 @@
 <body>
   <header class="site-header">
     <a class="wordmark" href="#top">JB</a>
-    <nav aria-label="Primary navigation"><a href="#research">Research</a><a href="#experience">Experience</a><a href="#hobbies">Hobbies</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+    <nav aria-label="Primary navigation"><a href="#research">Research</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
   </header>
   <main id="top">
     <section class="hero section-shell">
@@ -39,7 +39,7 @@
       <div class="research-list">
         <article class="research-card featured">
           <a class="research-visual" href="images/research/smoothness-length-control-audit.png"><img src="images/research/smoothness-length-control-audit.png" alt="Trajectory smoothness metrics under episode length controls" loading="lazy"></a>
-          <div class="card-copy"><div class="card-meta"><span class="status published">Accepted at NeurIPS 2026 RoboPAD</span><span>Robot learning · Demonstration curation</span></div><h3>Curation Metrics Are a Post-Training Decision: Auditing Trajectory Smoothness for Adapting Robot Foundation Models</h3><p>Accepted as a poster at the NeurIPS 2026 RoboPAD workshop. It builds on the base preprint, “Smoothness Ranks Skill, Not Success: An Audit of Published Trajectory-Smoothness Curation Metrics Under Episode-Length Controls,” which shows that published smoothness curation metrics mainly rank operator skill rather than task success; the CoRL WEBP and CoRL Oops, I Erred versions remain under review.</p><div class="card-links"><a href="https://github.com/imjbassi/smoothness-audit">Code &amp; papers</a><a href="https://arxiv.org/abs/2610.17427">arXiv</a><a href="https://www.researchgate.net/publication/413763343_Smoothness_Ranks_Skill_Not_Success_An_Audit_of_Published_Trajectory-Smoothness_Curation_Metrics_Under_Episode-Length_Controls">Base preprint</a><a href="https://openreview.net/forum?id=8HHUxS9GcK">WEBP OpenReview</a><a href="https://openreview.net/forum?id=wj9Kj3hsJs">RoboPAD poster (OpenReview)</a><a href="https://openreview.net/forum?id=7C6WROjCKQ">Oops OpenReview</a></div></div>
+          <div class="card-copy"><div class="card-meta"><span class="status published">Accepted at NeurIPS 2026 RoboPAD</span><span>Robot learning · Demonstration curation</span></div><h3>Smoothness Ranks Skill, Not Success: An Audit of Published Trajectory-Smoothness Curation Metrics Under Episode-Length Controls</h3><p>Shows that published smoothness metrics for curating robomimic demonstrations mostly track episode length and operator skill rather than task success; curating by the contact-aware TED metric cut downstream policy success by a third versus random selection. Accepted as a poster at the NeurIPS 2026 RoboPAD workshop (arXiv:2610.17427).</p><div class="card-links"><a href="https://github.com/imjbassi/smoothness-audit">Code &amp; papers</a><a href="https://arxiv.org/abs/2610.17427">arXiv</a><a href="https://www.researchgate.net/publication/413763343_Smoothness_Ranks_Skill_Not_Success_An_Audit_of_Published_Trajectory-Smoothness_Curation_Metrics_Under_Episode-Length_Controls">Base preprint</a><a href="https://openreview.net/forum?id=8HHUxS9GcK">WEBP OpenReview</a><a href="https://openreview.net/forum?id=wj9Kj3hsJs">RoboPAD poster (OpenReview)</a><a href="https://openreview.net/forum?id=7C6WROjCKQ">Oops OpenReview</a></div></div>
         </article>
         <article class="research-card">
           <a class="research-visual" href="images/research/demonstration-failure-dose-response.png"><img src="images/research/demonstration-failure-dose-response.png" alt="Closed loop success and open loop error across five demonstration failure modes" loading="lazy"></a>
@@ -56,18 +56,6 @@
         <article class="research-card">
           <a class="research-visual" href="images/research/int8-host-cpu-latency.png"><img src="images/research/int8-host-cpu-latency.png" alt="FP32 and INT8 latency distributions with backend specific speedups" loading="lazy"></a>
           <div class="card-copy"><div class="card-meta"><span class="status released">Archived preprint</span><span>Edge AI · Host CPU inference</span></div><h3>When Does INT8 Actually Accelerate Host-CPU Inference? A Reproducible Audit of MobileNetV2 Conversion and Packaging</h3><p>Shows that INT8 latency depends on backend delegation and quantization granularity, alongside paired accuracy and packaging controls. Version 1.2.0 is archived on Zenodo and has not been submitted for peer review.</p><div class="card-links"><a href="https://github.com/imjbassi/efficient-ai-edge-deployment">Code &amp; manuscript</a><a href="https://github.com/imjbassi/efficient-ai-edge-deployment/blob/main/output/pdf/main.pdf">PDF</a><a href="https://doi.org/10.5281/zenodo.22758817">Zenodo release</a></div></div>
-        </article>
-        <article class="research-card">
-          <a class="research-visual" href="images/research/adversarial-transfer-directionality.png"><img src="images/research/adversarial-transfer-directionality.png" alt="Directional PGD transfer rates across budgets and model pairs" loading="lazy"></a>
-          <div class="card-copy"><div class="card-meta"><span class="status current">Under review at TMLR</span><span>Adversarial ML · CIFAR 10</span></div><h3>Conditioning and Directionality in Adversarial Transfer on CIFAR-10</h3><p>A denominator aware full test study across three architectures and three training seeds. The manuscript is under review at Transactions on Machine Learning Research, with an archived reproducibility release.</p><div class="card-links"><a href="https://github.com/imjbassi/transferability-of-adversarial-attacks">Code &amp; artifacts</a><a href="https://github.com/imjbassi/transferability-of-adversarial-attacks/blob/main/paper/tmlr/main.pdf">Manuscript</a><a href="https://openreview.net/forum?id=0wQCiGLqZx">OpenReview</a><a href="https://doi.org/10.5281/zenodo.22737839">Reproducibility release</a></div></div>
-        </article>
-        <article class="research-card">
-          <a class="research-visual" href="images/research/brain-mri-leakage-pairs.png"><img src="images/research/brain-mri-leakage-pairs.png" alt="Nearly identical MRI scans found across benchmark test and training folders" loading="lazy"></a>
-          <div class="card-copy"><div class="card-meta"><span class="status released">Preprint</span><span>Medical imaging · Benchmark audit</span></div><h3>Complete Patient-Level Leakage Among Traceable Images in a Widely Used Brain Tumor MRI Benchmark</h3><p>Finds complete patient overlap among traceable tumor test images plus substantial duplicate contamination, and releases patient disjoint folds. Available as a preprint and Zenodo artifact; not yet submitted to a journal.</p><div class="card-links"><a href="https://github.com/imjbassi/brain-tumor-mri-classification">Code &amp; paper</a><a href="https://github.com/imjbassi/brain-tumor-mri-classification/blob/main/paper/main.pdf">PDF</a><a href="https://doi.org/10.5281/zenodo.22755070">Zenodo artifact</a></div></div>
-        </article>
-        <article class="research-card">
-          <a class="research-visual" href="images/research/sampling-budget-embeddings.png"><img src="images/research/sampling-budget-embeddings.png" alt="PCA, TICA, and VAE embeddings across four sampling budgets" loading="lazy"></a>
-          <div class="card-copy"><div class="card-meta"><span class="status current">Under review at JCTC</span><span>Molecular simulation · Dimensionality reduction</span></div><h3>Sampling Budget Biases Apparent Metastable-State Counts in Molecular Simulation</h3><p>Controlled synthetic landscapes and two independent alanine dipeptide trajectories show how sampling budget can inflate apparent state counts. Under review at JCTC after submission on September 15, 2026.</p><div class="card-links"><a href="https://github.com/imjbassi/state-count-sampling-bias">Code &amp; manuscript</a><a href="https://github.com/imjbassi/state-count-sampling-bias/blob/main/paper/main.pdf">PDF</a><a href="https://chemrxiv.org/doc/3ca81cab-c111-4416-99f8-0b2654e38da7">ChemRxiv preprint</a><a href="https://doi.org/10.5281/zenodo.22754433">Versioned dataset</a></div></div>
         </article>
       </div>
     </section>
@@ -121,12 +109,6 @@
         <p><strong>Reviewer, CoRL 2026 Workshop on Learning from Corrections and Interventions (LfC)</strong><span>2026</span></p>
       </div>
     </section>
-
-    <section id="hobbies" class="section-shell section-block hobbies"><div class="section-heading simple"><div><p class="eyebrow">Beyond work</p><h2>Hobbies</h2></div></div><div class="hobby-grid">
-      <div><h3>Reading and philosophy</h3><p>I read philosophy, theology, science, and the classics. <a href="https://www.goodreads.com/user/show/168757173-jaiveer">Add me on Goodreads</a> to see what I am reading, and follow my writing on <a href="https://imjbassi.medium.com">Medium</a>.</p></div>
-      <div><h3>Building keyboards</h3><p>I enjoy building custom keyboards and plan to release projects and articles about them whenever possible. Stay tuned.</p></div>
-      <div><h3>3D printing</h3><p>I design, print, and refine physical pieces through <a href="https://castline.studio">Castline Studio</a>, combining digital fabrication with hands on experimentation.</p></div>
-    </div></section>
   </main>
   <footer id="contact"><div class="section-shell footer-inner"><div><p class="eyebrow">Let’s connect</p><h2>Building something difficult?</h2></div><div class="footer-links"><a href="mailto:jaiveerbassi@yahoo.com">Email</a><a href="https://linkedin.com/in/jaiveer-bassi">LinkedIn</a><a href="https://github.com/imjbassi">GitHub</a><a href="https://www.researchgate.net/profile/Jaiveer-Bassi">ResearchGate</a></div></div></footer>
 </body>
